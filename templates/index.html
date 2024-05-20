@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='style.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <script src="{{url_for('.static', filename='app.js')}}"></script>
+    <title>Rimini Treasure Hunt</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <p id="hintMessage" style="display:none;"></p>
+                <p id="nextStepMessage" style="display:none;"></p>
+                <p id="okMessage" style="display:none;"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="distanceMessage" style="display:none;"></p>
+                <p id="endMessage" style="display:none;" >Hai completato la caccia al tesoro!!</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <button id="startButton" onclick="start()">Inizia la caccia al tesoro!</button>
+                <button id="getLocationButton" style="display:none;" onclick="getLocation()">Ci sono!</button>
+                <button id="nextStepButton" style="display:none;" onclick="nextLocation()">Vai al prossimo step</button>
+                <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()">SKIP</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
