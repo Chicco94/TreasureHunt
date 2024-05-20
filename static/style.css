@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,31 +7,45 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Imposta la direzione del layout a colonna */
+    flex-direction: column;
 }
 
 
+tr {
+    flex-direction: row; 
+    display: flex;
+    min-height: 240px;
+}
+
 td {
-    flex-direction: column; /* Imposta la direzione del layout a colonna */
+    flex-direction: row; 
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 240px;
 }
 
 
 button {
-    padding: 20px 40px;
-    font-size: 24px;
     background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 100%;
     display: block;
+}
+
+button.central {
+    padding: 20px 40px;
+    font-size: 24px;
     height: 200px;
     width: 200px;
+}
+
+button.info {
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
 }
 
 p {

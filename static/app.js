@@ -1,17 +1,17 @@
 var targetPositions = [
-    { latitude: 44.060644, longitude: 12.565954, hintMessage:"Inizia la tua avventura nella piazza principale di Rimini, dove c'è una fontana adornata da una statua. Cerca sotto il suo sguardo vigile per il primo indizio!" },
-    { latitude: 44.056981, longitude: 12.571071, hintMessage:"Il passato romano di Rimini si riflette in questo maestoso arco. Guarda da vicino le sue decorazioni per trovare la prossima direzione da prendere" }, 
-    { latitude: 44.067290, longitude: 12.581946, hintMessage:"Dirigiti verso il luccichio del sole sull'acqua e troverai la prossima tappa, dove il suono delle onde si mescola con il richiamo dei gabbiani" },
-    { latitude: 44.077141, longitude: 12.575021, hintMessage:"Da qui puoi avere una vista mozzafiato sulla città e sul mare. Osserva attentamente il panorama e troverai l'indizio che ti guiderà al prossimo traguardo della tua avventura" },
-    { latitude: 44.081782, longitude: 12.576638, hintMessage:"Dirigiti lungo il porto di Rimini, dove la storia e la cultura si mescolano con l'atmosfera marinaresca. Cerca tra le imbarcazioni e gli edifici colorati per trovar del marinaio la sposa" },
-    { latitude: 44.059817, longitude: 12.564048, hintMessage:"La fortezza medievale ti proteggerà dal caldo sole estivo mentre ti svela il segreto della prossima tappa. Guarda attentamente le mura per trovare la prossima tappa del tuo viaggio" },
-    { latitude: 44.059952, longitude: 12.569947, hintMessage:"La bellezza gotica di questo edificio ti svelerà il prossimo passo. C'è un dettaglio nascosto che ti guiderà alla tua destinazione successiva" },
-    { latitude: 44.060221, longitude: 12.575327, hintMessage:"Immergiti nell'antica grandezza dell'antica Roma, dove una volta echeggiavano i suoni dei combattimenti gladiatori" },
-    { latitude: 44.059247, longitude: 12.568537, hintMessage:"Nel cuore del centro storico, troverai una piazza che racconta storie di coraggio. Cerca tra i suoi monumenti per il tesoro che cerchi" },
-    { latitude: 44.062064, longitude: 12.567580, hintMessage:"Esplora le antiche mura del medico più famoso di Rimini, dove i segreti della medicina romana sono stati conservati" },
-    { latitude: 44.063674, longitude: 12.563827, hintMessage:"Via verso il maestoso Ponte, un simbolo dell'antica ingegneria romana che si erge fiero sul fiume Marecchia" },
-    { latitude: 44.064979, longitude: 12.565711, hintMessage:"Attraversa il fiume Marecchia e immergiti nell'atmosfera unica di questo borgo. Tra i colorati murales e le stradine acciottolate, troverai l'ultimo indizio!" },
-    { latitude: 44.064965, longitude: 12.561880, hintMessage:"Ora via dove la pancia incontra il mare...si va a mangiare!!" }
+    { latitude: 44.060644, longitude: 12.565954, hintMessage:"Inizia la tua avventura nella piazza principale di Rimini, dove c'è una fontana adornata da una statua. Cerca sotto il suo sguardo vigile per il primo indizio!" , info:"testo di prova1"},
+    { latitude: 44.056981, longitude: 12.571071, hintMessage:"Il passato romano di Rimini si riflette in questo maestoso arco. Guarda da vicino le sue decorazioni per trovare la prossima direzione da prendere" , info:"testo di prova2" },
+    { latitude: 44.067290, longitude: 12.581946, hintMessage:"Dirigiti verso il luccichio del sole sull'acqua e troverai la prossima tappa, dove il suono delle onde si mescola con il richiamo dei gabbiani" , info:"testo di prova3"},
+    { latitude: 44.077141, longitude: 12.575021, hintMessage:"Da qui puoi avere una vista mozzafiato sulla città e sul mare. Osserva attentamente il panorama e troverai l'indizio che ti guiderà al prossimo traguardo della tua avventura" , info:"testo di prova"},
+    { latitude: 44.081782, longitude: 12.576638, hintMessage:"Dirigiti lungo il porto di Rimini, dove la storia e la cultura si mescolano con l'atmosfera marinaresca. Cerca tra le imbarcazioni e gli edifici colorati per trovar del marinaio la sposa" , info:"testo di prova"},
+    { latitude: 44.059817, longitude: 12.564048, hintMessage:"La fortezza medievale ti proteggerà dal caldo sole estivo mentre ti svela il segreto della prossima tappa. Guarda attentamente le mura per trovare la prossima tappa del tuo viaggio" , info:"testo di prova"},
+    { latitude: 44.059952, longitude: 12.569947, hintMessage:"La bellezza gotica di questo edificio ti svelerà il prossimo passo. C'è un dettaglio nascosto che ti guiderà alla tua destinazione successiva" , info:"testo di prova"},
+    { latitude: 44.060221, longitude: 12.575327, hintMessage:"Immergiti nell'antica grandezza dell'antica Roma, dove una volta echeggiavano i suoni dei combattimenti gladiatori" , info:"testo di prova"},
+    { latitude: 44.059247, longitude: 12.568537, hintMessage:"Nel cuore del centro storico, troverai una piazza che racconta storie di coraggio. Cerca tra i suoi monumenti per il tesoro che cerchi" , info:"testo di prova"},
+    { latitude: 44.062064, longitude: 12.567580, hintMessage:"Esplora le antiche mura del medico più famoso di Rimini, dove i segreti della medicina romana sono stati conservati" , info:"testo di prova"},
+    { latitude: 44.063674, longitude: 12.563827, hintMessage:"Via verso il maestoso Ponte, un simbolo dell'antica ingegneria romana che si erge fiero sul fiume Marecchia" , info:"testo di prova"},
+    { latitude: 44.064979, longitude: 12.565711, hintMessage:"Attraversa il fiume Marecchia e immergiti nell'atmosfera unica di questo borgo. Tra i colorati murales e le stradine acciottolate, troverai l'ultimo indizio!" , info:"testo di prova"},
+    { latitude: 44.064965, longitude: 12.561880, hintMessage:"Ora via dove la pancia incontra il mare...si va a mangiare!!", info:"testo di prova" }
 ];
 
 
@@ -33,12 +33,14 @@ function nextLocation() {
         document.getElementById("hintMessage").style.display = "none";
         document.getElementById("okMessage").style.display = "none";
         document.getElementById("endMessage").style.display = "block";
+        document.getElementById("infoButton").style.display = "none";
     } else { // Caccia al tesoro in corso
         document.getElementById("getLocationButton").style.display = "block";
         document.getElementById("hintMessage").style.display = "block";
         document.getElementById("distanceMessage").style.display = "none";
         document.getElementById("okMessage").style.display = "none";
         document.getElementById("nextStepButton").style.display = "none";
+        document.getElementById("infoButton").style.display = "none";
         document.getElementById("hintMessage").innerHTML = targetPositions[targetIndex].hintMessage;
     }
 }
@@ -55,15 +57,23 @@ function getLocation() {
 
 
 function skipToNextLocation(){
-    attemps = 0;
-    document.getElementById("okMessage").innerHTML = "Prossima volta cerco di sviluppare meglio il gps :)";
-    document.getElementById("getLocationButton").style.display = "none";
-    document.getElementById("hintMessage").style.display = "none";
-    document.getElementById("nextStepButton").style.display = "none";
-    document.getElementById("distanceMessage").style.display = "none";
-    document.getElementById("okMessage").style.display = "block";
-    document.getElementById("nextStepButton").style.display = "block";
-    document.getElementById("skipToNextStepButton").style.display = "none";
+    var result = confirm("Vuoi saltare la tappa?");
+    if (result) {
+        attemps = 0;
+        document.getElementById("okMessage").innerHTML = "Tappa non correttamente raggiunta";
+        document.getElementById("getLocationButton").style.display = "none";
+        document.getElementById("hintMessage").style.display = "none";
+        document.getElementById("nextStepButton").style.display = "none";
+        document.getElementById("distanceMessage").style.display = "none";
+        document.getElementById("okMessage").style.display = "block";
+        document.getElementById("nextStepButton").style.display = "block";
+        document.getElementById("skipToNextStepButton").style.display = "none";
+        document.getElementById("infoButton").style.display = "block";
+    }
+}
+
+function info(){
+    alert(targetPositions[targetIndex].info)
 }
 
 
@@ -85,19 +95,15 @@ function checkPosition(position) {
         document.getElementById("okMessage").style.display = "block";
         document.getElementById("nextStepButton").style.display = "block";
         document.getElementById("skipToNextStepButton").style.display = "none";
+        document.getElementById("infoButton").style.display = "block";
     } else {
         attemps += 1;
-        if (attemps >= 20){
-            document.getElementById("getLocationButton").style.display = "none";
-            document.getElementById("nextStepButton").style.display = "none";
-            document.getElementById("distanceMessage").style.display = "none";
-            document.getElementById("okMessage").style.display = "none";
-            document.getElementById("nextStepButton").style.display = "none";
+        if (attemps >= 1){
             document.getElementById("skipToNextStepButton").style.display = "block";
-        } else {
-            document.getElementById("distanceMessage").innerHTML = "Sei troppo lontano. Ti mancano ancora "+distance+" metri";
-            document.getElementById("distanceMessage").style.display = "block";
-        }
+        } 
+        document.getElementById("distanceMessage").innerHTML = "Sei troppo lontano. Ti mancano ancora "+distance+" metri";
+        document.getElementById("distanceMessage").style.display = "block";
+        
     }
 }
 

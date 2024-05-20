@@ -9,7 +9,7 @@
     <title>Rimini Treasure Hunt</title>
 </head>
 <body>
-    <table>
+    <table style="width: 100%;">
         <tr>
             <td>
                 <p id="hintMessage" style="display:none;"></p>
@@ -26,11 +26,16 @@
         </tr>
         
         <tr>
-            <td>
-                <button id="startButton" onclick="start()">Inizia la caccia al tesoro!</button>
-                <button id="getLocationButton" style="display:none;" onclick="getLocation()">Ci sono!</button>
-                <button id="nextStepButton" style="display:none;" onclick="nextLocation()">Vai al prossimo step</button>
-                <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()">SKIP</button>
+            <td style="width: 25%;">
+                <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()" class="info">SKIP</button>
+            </td>
+            <td style="width: 50%;">
+                <button id="startButton" onclick="start()" class="central">Inizia la caccia al tesoro!</button>
+                <button id="getLocationButton" style="display:none;" onclick="getLocation()" class="central">Ci sono!</button>
+                <button id="nextStepButton" style="display:none;" onclick="nextLocation()" class="central">Vai al prossimo step</button>
+            </td>
+            <td style="width: 25%;">
+                <button id="infoButton" onclick="info()" style="display:none;" class="info">I</button>
             </td>
         </tr>
     </table>
