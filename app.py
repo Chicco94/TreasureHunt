@@ -30,7 +30,7 @@ def webhook():
 	if request.method == 'POST':
 		repo = git.Repo('/home/Chicco94')
 		origin = repo.remotes.origin
-		origin.pull()
+		origin.pull('main')
 		return 'Updated PythonAnywhere successfully', 200
 	else:
 		return 'Wrong event type', 400
