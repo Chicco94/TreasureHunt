@@ -62,3 +62,30 @@ p {
     color: green;
     font-weight: bold;
 }
+
+
+#container {
+    overflow: hidden;
+    width: 90vw;
+    top: 10vh;
+    position: fixed; /* Set the navbar to fixed position */
+}
+  
+#inner {
+    overflow: hidden;
+    width: 90vw;
+}
+
+.child {
+    float: left;
+    background-color: green;
+    height: 20px;
+}
+
+.last-child {
+    float: left;
+    background-color: green;
+    height: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

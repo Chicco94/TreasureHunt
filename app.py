@@ -1,10 +1,8 @@
-from flask import Flask, render_template, jsonify, request, redirect, url_for, session
+from flask import Flask, render_template, jsonify, request, session
 from models.position import Position,distance
 import git
 
 app = Flask(__name__)
-app.secret_key = "3d6f45a5fc12445dbac2f59c3b6c7cb1"
-app.config['SESSION_TYPE'] = 'filesystem'
 
 targetPositions = [
 	Position(44.060644, 12.565954, "Inizia la tua avventura nella piazza principale di Rimini, dove c'è una fontana adornata da una statua. Cerca sotto il suo sguardo vigile per il primo indizio!" ,"Ho cercato un minimo di storia...ma non ho trovato niente!!"),
@@ -40,7 +38,7 @@ def webhook():
 def index():
 	session.clear()
 	session['targetIndex'] = 0
-	return render_template('index.html')
+	return render_template('index.html', tappa_attuale=-1)
 	
 
 @app.route('/next-position', methods=['POST','GET','REDIRECT'])
@@ -56,8 +54,7 @@ def next_position():
 
 @app.route('/tappa_raggiunta')
 def tappa_raggiunta():
-	print("rendering")
-	return render_template('tappa_raggiunta.html', posizione=targetPositions[session['targetIndex']])
+	return render_template('tappa_raggiunta.html', posizione=targetPositions[session['targetIndex']], tappa_attuale=session['targetIndex']+1, tot_tappe=len(targetPositions))
 
 
 @app.route('/check-position', methods=['POST'])
@@ -78,12 +75,12 @@ def check_position():
 
 @app.route('/tappa')
 def tappa():
-	return render_template('tappa.html', posizione=targetPositions[session['targetIndex']])
+	return render_template('tappa.html', posizione=targetPositions[session['targetIndex']], tappa_attuale=session['targetIndex'], tot_tappe=len(targetPositions))
 
 
 @app.route('/fine')
 def fine():
-	return render_template('fine.html')
+	return render_template('fine.html', tappa_attuale=-1)
 
 
 if __name__ == '__main__':
