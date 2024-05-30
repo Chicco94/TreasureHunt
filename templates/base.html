@@ -9,6 +9,19 @@
     <title>Rimini Treasure Hunt</title>
 </head>
 <body>
+    {% if tappa_attuale >= 0 %}
+    <div id="container">
+        <div id="inner">
+            {% for tappa in range(tot_tappe) %}
+                {% if tappa < tappa_attuale %}
+                    <div class="child" style="width: calc(90vw/{{ tot_tappe }});"></div>
+                {% elif tappa == tappa_attuale %}
+                    <div class="last-child" style="width: calc(80vw/{{ tot_tappe }});"></div>
+                {% endif %}
+            {% endfor %}                
+        </div>
+    </div>
+    {% endif %}
     <div class="content">
         {% block content %} {% endblock %}
     </div>
