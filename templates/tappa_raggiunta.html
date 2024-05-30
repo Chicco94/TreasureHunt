@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table style="width: 100%;">
+    <tr> <!-- TOP MESSAGE -->
+        <td> 
+            {{ posizione.infoMessage }}
+        </td>
+    </tr>
+    
+    <tr> <!-- BUTTONS -->
+        <td style="width: 100%;">
+            <button id="nextStepButton" onclick="nextLocation()" class="central">Prossima tappa</button>
+        </td>
+    </tr>
+</table>
+{% endblock %}

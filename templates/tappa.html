@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table style="width: 100%;">
+    <tr> <!-- TOP MESSAGE -->
+        <td> 
+            {{ posizione.hintMessage }}
+        </td>
+    </tr>
+
+    <tr> <!-- DISTANCE FROM TARGET -->     
+        <td> 
+            <p id="distanceMessage" style="display:none;"></p>
+        </td>
+    </tr>
+    
+    <tr> <!-- BUTTONS -->
+        <td style="width: 25%;">
+            <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()" class="info">SKIP</button>
+        </td>
+        <td style="width: 50%;">
+            <button id="getLocationButton" onclick="getLocation()" class="central">Ci sono!</button>
+        </td>
+        <td style="width: 25%;">
+        </td>
+    </tr>
+</table>
+{% endblock %}
