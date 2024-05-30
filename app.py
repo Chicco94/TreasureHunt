@@ -3,7 +3,8 @@ from models.position import Position,distance
 import git
 
 app = Flask(__name__)
-app.secret_key = "any random string"
+app.secret_key = "3d6f45a5fc12445dbac2f59c3b6c7cb1"
+app.config['SESSION_TYPE'] = 'filesystem'
 
 targetPositions = [
 	Position(44.060644, 12.565954, "Inizia la tua avventura nella piazza principale di Rimini, dove c'è una fontana adornata da una statua. Cerca sotto il suo sguardo vigile per il primo indizio!" ,"Ho cercato un minimo di storia...ma non ho trovato niente!!"),
