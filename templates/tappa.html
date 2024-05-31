@@ -4,7 +4,7 @@
 <table style="width: 100%;">
     <tr> <!-- TOP MESSAGE -->
         <td> 
-            {{ posizione.hintMessage }}
+            <p>{{ posizione.hintMessage }}</p>
         </td>
     </tr>
 
@@ -16,7 +16,9 @@
     
     <tr> <!-- BUTTONS -->
         <td style="width: 25%;">
-            <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()" class="info">SKIP</button>
+            <button id="skipToNextStepButton" style="display:none;" onclick="skipToNextLocation()" class="info">
+                <img src="{{ url_for('static', filename='images/skip.svg') }}" alt="My Happy SVG" style="color: white;vertical-align: middle">
+            </button>
         </td>
         <td style="width: 50%;">
             <button id="getLocationButton" onclick="getLocation()" class="central">Ci sono!</button>
