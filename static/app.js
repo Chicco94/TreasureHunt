@@ -18,13 +18,21 @@ function checkPosition(position) {
 	.then(data => {
 			distance = data.distance_calculated;
 			reached = data.reached;
-			document.getElementById("distanceMessage").innerHTML = data.message;
-			document.getElementById("distanceMessage").style.display = "block";
 			if (!reached){
+				document.getElementById("distanceMessage").innerHTML = data.message;
+				document.getElementById("distanceMessage").style.display = "block";
 				document.getElementById("skipToNextStepButton").style.display = "block";
+			} else {
+				document.getElementById("distanceMessage").style.display = "none";
+				alert(data.message);
+				nextLocation();
 			}
 		}
 	);
+}
+
+function sleep(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
 }
 
 function skipToNextLocation(){
