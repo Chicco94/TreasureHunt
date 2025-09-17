@@ -2,9 +2,38 @@
 
 {% block content %}
 <table>
-    <tr></tr>
-    <tr></tr>
     <tr>
+        <td id="hunts-list">
+            <div id="hunts-container" style="display: flex; flex-direction: column; text-align: left;">
+                {% for hunt in hunts_list %}
+                    <div onclick='setSelectedHunt({{ hunt.id }} )' class="hunt-item" data-index="${i}" style="cursor: pointer;">
+                        <strong>{{ hunt.name }}</strong><br>
+                        {{ hunt.description }}
+                    </div>
+                    <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Highlight the last selected item
+                        const huntItems = document.querySelectorAll('.hunt-item');
+                        let lastSelected = null;
+                        huntItems.forEach(item => {
+                            item.addEventListener('click', function() {
+                                if (lastSelected) {
+                                    lastSelected.style.outline = '';
+                                    lastSelected.style.backgroundColor = 'azure';
+                                }
+                                this.style.outline = '2px solid #0078d7';
+                                this.style.backgroundColor = '#e6f2ff';
+                                lastSelected = this;
+                            });
+                        });
+                    });
+                    </script>
+                {% endfor %}
+            </div>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr style="justify-content: center;">
         <td>
             <a href="{{ url_for('tappa') }}">
                 <button class="central">Inizia la caccia al tesoro!</button>

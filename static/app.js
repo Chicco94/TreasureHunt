@@ -6,6 +6,8 @@ function getLocation() {
     }
 }
 
+
+
 function checkPosition(position) {
 	fetch('/check-position', {
 	  method: 'POST',
@@ -31,9 +33,26 @@ function checkPosition(position) {
 	);
 }
 
+
+
+function setSelectedHunt(selected_hunt_id) {
+	fetch('/set-selected-hunt', {
+	  method: 'POST',
+	  headers: {
+		'Content-Type': 'application/json',
+	  },
+	  body: JSON.stringify({id: selected_hunt_id})
+	})
+	.then(response => response.json())
+}
+
+
+
 function sleep(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
 }
+
+
 
 function skipToNextLocation(){
     var result = window.confirm("Vuoi saltare la tappa?");
@@ -41,6 +60,8 @@ function skipToNextLocation(){
         window.location.href = "tappa_raggiunta";
     }
 }
+
+
 
 function nextLocation() {
 	fetch('/next-position', {
