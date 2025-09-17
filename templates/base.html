@@ -9,6 +9,21 @@
     <title>Rimini Treasure Hunt</title>
 </head>
 <body>
+    <div style="
+            display: flex; 
+            width: 100vw; 
+            height: 10vh; 
+            align-items: center; 
+            justify-content: space-evenly; 
+            font-size: 4vh; 
+            font-weight: bold; 
+            color: white; 
+            background-color: #007BFF;">
+        <a href="{{ url_for('index') }}">
+            <img id="logo" src="{{ url_for('static', filename='images/home.svg') }}" alt="Logo" style="max-height: 6vh;">
+        </a>
+        Rimini Treasure Hunt
+    </div>
     <div id="progress-bar-container">
         {% if tappa_attuale >= 0 %}
         <div id="progress-bar-">
