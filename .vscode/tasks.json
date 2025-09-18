@@ -7,6 +7,9 @@
             "label": "Start debug",
             "type": "shell",
             "command": "flask --app app run --debug",
+            "problemMatcher": [
+                "$python"
+            ]
         }
     ]
 }
