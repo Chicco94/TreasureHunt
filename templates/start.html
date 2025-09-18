@@ -36,7 +36,26 @@
     <tr style="justify-content: center;">
         <td>
             <a href="{{ url_for('tappa') }}">
-                <button class="central">Inizia la caccia al tesoro!</button>
+                <button class="central" id="start-btn" disabled>Inizia la caccia al tesoro!</button>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const startBtn = document.getElementById('start-btn');
+                    let lastSelected = null;
+                    const huntItems = document.querySelectorAll('.hunt-item');
+                    huntItems.forEach(item => {
+                        item.addEventListener('click', function() {
+                            if (lastSelected) {
+                                lastSelected.style.outline = '';
+                                lastSelected.style.backgroundColor = 'azure';
+                            }
+                            this.style.outline = '2px solid #0078d7';
+                            this.style.backgroundColor = '#e6f2ff';
+                            lastSelected = this;
+                            startBtn.disabled = false;
+                        });
+                    });
+                });
+                </script>
             </a>
         </td>
     </tr>
