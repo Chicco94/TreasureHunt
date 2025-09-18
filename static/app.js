@@ -1,8 +1,18 @@
 function getLocation() {
+	console.log("Getting location...");
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-			checkPosition,
+		console.log("Geolocation is supported by this browser.");
+		// Mostra la clessidra o barra di caricamento
+		document.getElementById("loadingSpinner").style.display = "block";
+
+		navigator.geolocation.getCurrentPosition(
+			function(position) {
+				// Nasconde la clessidra o barra di caricamento
+				document.getElementById("loadingSpinner").style.display = "none";
+				checkPosition(position);
+			},
 			function(error) {
+				document.getElementById("loadingSpinner").style.display = "none";
 				console.error(error);
 				alert("Errore nel recupero della posizione. Assicurati di aver abilitato la condivisione della posizione.");
 			}
@@ -15,6 +25,7 @@ function getLocation() {
 
 
 function checkPosition(position) {
+	console.log("Checking position...");
 	fetch('/check-position', {
 	  method: 'POST',
 	  headers: {

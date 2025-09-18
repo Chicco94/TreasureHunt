@@ -5,7 +5,6 @@ from models.hunts import Hunt,hunts_list
 
 
 app = Flask(__name__)
-app.secret_key = 'super secret key'
 
 
 
@@ -92,4 +91,5 @@ def fine():
 
 
 if __name__ == '__main__':
+    app.secret_key = 'super secret key'
     app.run()
