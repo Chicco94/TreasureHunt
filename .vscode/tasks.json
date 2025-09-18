@@ -6,7 +6,7 @@
         {
             "label": "Start debug",
             "type": "shell",
-            "command": "flask --app app run --debug",
+            "command": "flask --app app run --debug --host=192.168.1.26",
             "problemMatcher": [
                 "$python"
             ]

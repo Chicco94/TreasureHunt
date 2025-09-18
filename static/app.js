@@ -1,6 +1,12 @@
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(checkPosition);
+        navigator.geolocation.getCurrentPosition(
+			checkPosition,
+			function(error) {
+				console.error(error);
+				alert("Errore nel recupero della posizione. Assicurati di aver abilitato la condivisione della posizione.");
+			}
+		);
     } else {
         alert("Geolocation is not supported by this browser");
     }

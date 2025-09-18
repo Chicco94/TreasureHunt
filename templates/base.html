@@ -6,7 +6,7 @@
     <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='style.css')}}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}">
     <script src="{{url_for('.static', filename='app.js')}}"></script>
-    <title>Rimini Treasure Hunt</title>
+    <title>Treasure Hunt</title>
 </head>
 <body>
     <div style="
@@ -22,7 +22,7 @@
         <a href="{{ url_for('index') }}">
             <img id="logo" src="{{ url_for('static', filename='images/home.svg') }}" alt="Logo" style="max-height: 6vh;">
         </a>
-        Rimini Treasure Hunt
+        Treasure Hunt
     </div>
     <div id="progress-bar-container">
         {% if tappa_attuale >= 0 %}
