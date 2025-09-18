@@ -3,16 +3,16 @@ function getLocation() {
     if (navigator.geolocation) {
 		console.log("Geolocation is supported by this browser.");
 		// Mostra la clessidra o barra di caricamento
-		//document.getElementById("loadingSpinner").style.display = "block";
+		document.getElementById("spinner-overlay").style.display = "block";
 
 		navigator.geolocation.getCurrentPosition(
 			function(position) {
 				// Nasconde la clessidra o barra di caricamento
-				//document.getElementById("loadingSpinner").style.display = "none";
+				document.getElementById("spinner-overlay").style.display = "none";
 				checkPosition(position);
 			},
 			function(error) {
-				//document.getElementById("loadingSpinner").style.display = "none";
+				document.getElementById("spinner-overlay").style.display = "none";
 				console.error(error);
 				alert("Errore nel recupero della posizione. Assicurati di aver abilitato la condivisione della posizione.");
 				document.getElementById("skipToNextStepButton").style.display = "block";

@@ -60,6 +60,7 @@ body {
     border-bottom-right-radius: 50%;
 }
 
+
 /* 
 --------------------------
     Content Styles
@@ -113,6 +114,7 @@ p {
     text-align: justify;
 }
 
+
 /*
 --------------------------
     Bottom Bar Styles
@@ -124,6 +126,7 @@ p {
     background-color: azure;
 }
 
+
 /*
 --------------------------
     End Message Styles 
@@ -132,4 +135,32 @@ p {
 #endMessage {
     color: green;
     font-weight: bold;
+}
+
+
+/*
+--------------------------
+    Loading Spinner Styles
+--------------------------
+*/
+#spinner-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(255,255,255,0.8);
+    justify-content: center;
+    align-items: center;
+}
+#spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
 }
