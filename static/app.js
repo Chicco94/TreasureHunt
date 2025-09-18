@@ -3,7 +3,7 @@ function getLocation() {
     if (navigator.geolocation) {
 		console.log("Geolocation is supported by this browser.");
 		// Mostra la clessidra o barra di caricamento
-		document.getElementById("spinner-overlay").style.display = "block";
+		document.getElementById("spinner-overlay").style.display = "flex";
 
 		navigator.geolocation.getCurrentPosition(
 			function(position) {
