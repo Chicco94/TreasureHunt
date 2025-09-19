@@ -367,5 +367,72 @@ hunts_list = [
             )
         ]
     ),
+    Hunt(
+        7,
+        "Siviglia",
+        "Caccia al tesoro a Siviglia, tra palazzi moreschi, piazze storiche e mercati pieni di vita.",
+        [
+            # Torre del Oro
+            Position(37.3824815054664, -5.996172410691331,
+                "Vicino al fiume s’innalza una torre che un tempo brillava come l’oro. Custodiva segreti e ricchezze: riuscirai a svelarli guardando le sue mura?",
+                "Costruita nel XIII secolo dai Mori, la Torre del Oro difendeva l’accesso fluviale. Si racconta che fosse ricoperta da piastrelle dorate che riflettevano il sole sul Guadalquivir."
+            ),
+            # Parque de María Luisa
+            Position(37.3735784872386, -5.987907389415148,
+                "Entra nel giardino dei sogni: tra alberi secolari, fontane e padiglioni esotici. Segui il canto degli uccelli e troverai la strada.",
+                "Donato alla città nel 1893, il parco è un’oasi romantica di Siviglia. È celebre per i suoi viali ombreggiati, le statue dedicate a scrittori e i padiglioni dell’Esposizione del 1929."
+            ),
+            # Museo de Artes y Costumbres Populares de Sevilla
+            Position(37.37190099734513, -5.987678707790162,
+                "In un elegante padiglione scoprirai la vita quotidiana di un tempo: abiti, ceramiche e tradizioni che raccontano l’anima andalusa.",
+                "Ospitato nel padiglione mudéjar dell’Esposizione Iberoamericana, il museo custodisce collezioni legate all’artigianato, al folklore e alle usanze popolari dell’Andalusia."
+            ),
+            # Plaza de España
+            Position(37.377391994584464, -5.986142563659162,
+                "Un abbraccio di mattoni e maioliche, ponti e canali ti circondano. Solo chi percorre l’intero semicerchio troverà la via.",
+                "Simbolo dell’Esposizione Iberoamericana del 1929, la piazza rappresenta l’unione tra Spagna e le sue ex colonie. Ogni provincia ha un proprio pannello in ceramica."
+            ),
+            # Archivo de Indias
+            Position(37.384520696278564, -5.9935123809832636,
+                "Qui non troverai tesori d’oro, ma pergamene che raccontano il destino di un impero. Scova il palazzo che custodisce mappe e segreti delle Americhe.",
+                "L’Archivo de Indias contiene milioni di documenti sul periodo coloniale. Fu voluto da Carlo III per concentrare in un unico luogo la storia delle esplorazioni spagnole."
+            ),
+            # Real Alcázar
+            Position(37.38511776267362, -5.991877239494301,
+                "Varca la porta reale e perditi tra mosaici e giardini infiniti. Solo chi ascolta il silenzio dell’acqua troverà l’uscita.",
+                "Il Real Alcázar è un capolavoro mudéjar, ancora oggi residenza ufficiale dei reali di Spagna a Siviglia. La sua bellezza l’ha reso set di celebri film e serie."
+            ),
+            # Cattedrale di Siviglia e Giralda
+            Position(37.38514662926833, -5.992989501696389,
+                "Una torre che fu minareto ora sfida il cielo. Scala la sua rampa e osserva dall’alto la città che non dorme mai.",
+                "La Cattedrale è la più grande costruzione gotica del mondo. La Giralda, antico minareto almohade, è alta più di 100 metri e veniva salita a cavallo dai muezzin."
+            ),
+            # Barrio de Santa Cruz
+            Position(37.386238870365936, -5.990045489094412,
+                "Addentrati in vicoli stretti dove il tempo sembra fermarsi. Tra aranci in fiore e balconi colorati, ascolta i sussurri delle antiche leggende.",
+                "Un tempo quartiere ebraico, il Barrio de Santa Cruz è oggi il cuore pittoresco di Siviglia. È famoso per i suoi vicoli labirintici e i patios fioriti."
+            ),
+            # Metropol Parasol (Las Setas)
+            Position(37.39283724091993, -5.991940012228259,
+                "Sotto un bosco di legno troverai ombra e mistero. Sali sul suo dorso ondulato e la città si svelerà ai tuoi occhi.",
+                "Inaugurato nel 2011, il Metropol Parasol è la più grande struttura in legno del mondo. Conosciuto come Las Setas, ospita anche un mercato e un museo archeologico."
+            ),
+            # Monumento a San Fernando
+            Position(37.38860646350063, -5.995488071655011,
+                "Al centro di una piazza variopinta si erge il cavaliere che conquistò Siviglia. Solo chi riconoscerà il re-santo troverà la prossima traccia.",
+                "Il monumento è dedicato a Ferdinando III di Castiglia, che riconquistò Siviglia nel 1248. È una delle statue simbolo della città."
+            ),
+            # Plaza de Toros de la Maestranza
+            Position(37.38537079635972, -5.998813052731079,
+                "Un cerchio bianco e oro ti attende: luogo di passioni, sfide e applausi. Qui il tempo scorre al ritmo della tradizione.",
+                "Costruita nel XVIII secolo, la Maestranza è una delle arene più antiche e importanti di Spagna. Può ospitare fino a 12.000 spettatori."
+            ),
+            # Mercado de Triana – Tesoro finale
+            Position(37.38553943787021, -6.003180343155216,
+                "Oltre il ponte, in un quartiere di marinai e ceramisti, scoprirai il mercato dei colori. Qui ti attende il tesoro più goloso: tapas e sapori autentici.",
+                "Il Mercado de Triana sorge sui resti del Castello di San Jorge, antica sede dell’Inquisizione. Oggi è il luogo perfetto per gustare la vera cucina sivigliana."
+            ),
+        ]
+    )
 ]
             
