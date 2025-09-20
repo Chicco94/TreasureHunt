@@ -2,7 +2,7 @@
 
 {% block content %}
 <table>
-    <tr>
+    <tr style="height: 52vh;">
         <td id="hunts-list">
             <div id="hunts-container" style="display: flex; flex-direction: column; text-align: left;">
                 {% for hunt in hunts_list %}
@@ -32,7 +32,6 @@
             </div>
         </td>
     </tr>
-    <tr></tr>
     <tr style="justify-content: center;">
         <td>
             <a href="{{ url_for('tappa') }}">
