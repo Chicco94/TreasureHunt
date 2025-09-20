@@ -205,33 +205,43 @@ hunts_list = [
     Hunt(
         4,
         "Lisbona",
-        "Caccia al tesoro a Lisbona, tra colline, tram e storia.",
+        "Caccia al tesoro a Lisbona, tra miradouros, quartieri pittoreschi e simboli marittimi.",
         [
-            # Alfama
-            Position(38.7124771, -9.1298928,
-				"Perditi nei vicoli che salgono e scendono come onde: scale di pietra, panni stesi al vento e voci che cantano storie antiche. Da quassù, un castello sorveglia ogni passo.",
-				"Alfama è il quartiere più antico di Lisbona e l’unico a resistere quasi intatto al terremoto. Qui nacque il fado, il canto malinconico che racconta l’anima portoghese."
-			),
-            # Castelo de São Jorge
-            Position(38.7123645, -9.1329061,
-				"Tra mura di pietra e torri che sfidano il tempo, i corvi custodiscono leggende di re e battaglie. Trova il punto più alto: da qui la città si svela come un tesoro sotto i tuoi occhi.",
-				"Il castello ha origini moresche ed è stato riconquistato nel 1147. Dalla sua terrazza si gode uno dei panorami più spettacolari di Lisbona, che spazia dal Tago all’Alfama."
-			),
+            # Cattedrale di Lisbona (Sé de Lisboa)
+            Position(
+                38.709845206654535, -9.133338956668137,
+                "Un’antica cattedrale con torri gemelle custodisce secoli di fede e storia.",
+                "La Sé de Lisboa, costruita nel 1147, è la chiesa più antica della città. Fu eretta subito dopo la riconquista cristiana dai Mori, in stile romanico, con influenze gotiche e barocche dovute a successive ristrutturazioni. Sopravvisse a diversi terremoti, che ne modificarono l’aspetto. Al suo interno si conservano reliquie e un chiostro che rivela resti romani e visigoti. È dedicata a Sant’Antonio, patrono di Lisbona, che qui fu battezzato. Le sue torri gemelle e la facciata severa la rendono uno dei simboli spirituali della capitale portoghese."
+            ),
+            # Quartiere dell’Alfama
+            Position(
+                38.7124771, -9.1298928,
+                "Perditi nei vicoli che salgono e scendono come onde: scale di pietra, panni stesi al vento e voci che cantano storie antiche. Da quassù, un castello sorveglia ogni passo.",
+                "L’Alfama è il quartiere più antico e pittoresco di Lisbona, sopravvissuto quasi intatto al terremoto del 1755. Le sue stradine tortuose e le case colorate raccontano l’anima autentica della città. Qui nacque e si sviluppò il fado, la musica tradizionale portoghese, dichiarata patrimonio UNESCO. L’atmosfera è unica: panni stesi alle finestre, azulejos decorativi e piccole taverne accoglienti. Dal quartiere si aprono splendidi miradouros sul Tago. È un luogo che conserva il cuore popolare e nostalgico della capitale."
+            ),
+            # Castello di São Jorge
+            Position(
+                38.7123645, -9.1329061,
+                "Tra mura di pietra e torri che sfidano il tempo, i corvi custodiscono leggende di re e battaglie. Trova il punto più alto: da qui la città si svela come un tesoro sotto i tuoi occhi.",
+				"Il Castello di São Jorge sorge su una collina che domina Lisbona, ed è uno dei monumenti più antichi della città. Le sue origini risalgono ai Visigoti e ai Mori, ma divenne fortezza reale dopo la conquista cristiana del 1147. Dal castello si gode una vista panoramica straordinaria sul Tago e sui quartieri sottostanti. Fu residenza reale fino al XVI secolo, quando i sovrani si trasferirono verso la zona fluviale. Oggi i suoi bastioni e torri raccontano la storia militare della città. È una tappa imprescindibile per comprendere le radici di Lisbona."
+            ),
             # Praça do Comércio
-            Position(38.7072535, -9.1357750,
-				"Davanti al grande fiume, dove un tempo sorgeva il palazzo reale, si apre uno spazio immenso. Cavalieri di bronzo vegliano al centro: trova l’arco che custodisce l’ingresso alla città.",
-				"Dopo il terremoto del 1755, la piazza fu ricostruita come simbolo della nuova Lisbona. È uno dei luoghi più fotografati, con l’Arco da Rua Augusta che segna l’accesso alla Baixa."
-			),
+            Position(
+                38.7072535, -9.1357750,
+                "Davanti al grande fiume, dove un tempo sorgeva il palazzo reale, si apre uno spazio immenso. Cavalieri di bronzo vegliano al centro: trova l’arco che custodisce l’ingresso alla città.",
+				"La Praça do Comércio è una delle piazze più maestose d’Europa, simbolo della rinascita di Lisbona dopo il terremoto del 1755. Un tempo ospitava il Palazzo Reale Ribeira, distrutto dal sisma. Al centro sorge la statua equestre di re José I, realizzata dallo scultore Machado de Castro. L’imponente Arco da Rua Augusta segna l’accesso al centro storico. La piazza si apre direttamente sul fiume, evocando l’antico ruolo marittimo della città. Oggi è un luogo di ritrovo, di eventi e un biglietto da visita per chi arriva via mare."
+            ),
             # Rua Augusta e Arco
             Position(38.7108610, -9.1376612,
 				"Cammina lungo il tappeto di pietra bianca e nera: botteghe e profumi ti guidano verso una porta trionfale che sembra aprire il cielo. Solo chi osa attraversarla scoprirà la città segreta oltre le mura.",
 				"La Rua Augusta è la via pedonale più vivace della Baixa. L’arco, completato nell’Ottocento, celebra la ricostruzione della città e porta scolpite figure allegoriche che rappresentano il Genio e la Gloria."
 			),
             # Elevador de Santa Justa
-            Position(38.7121815, -9.1394466,
-				"Un gigante di ferro, con ingranaggi che sembrano usciti da un sogno di Jules Verne, sale verso il cielo. Chi osa prenderlo vedrà Lisbona dall’alto come un avventuriero in mongolfiera.",
-				"Costruito nel 1902 da un allievo di Gustave Eiffel, l’ascensore collega la Baixa al Largo do Carmo. La struttura in ferro battuto è un capolavoro dell’architettura industriale."
-			),
+            Position(
+                38.7121815, -9.1394466,
+                "Un gigante di ferro, con ingranaggi che sembrano usciti da un sogno di Jules Verne, sale verso il cielo. Chi osa prenderlo vedrà Lisbona dall’alto come un avventuriero in mongolfiera.",
+				"L’Elevador de Santa Justa, inaugurato nel 1902, fu progettato da Raoul Mesnier de Ponsard, allievo di Gustave Eiffel. La sua struttura neogotica in ferro battuto è un capolavoro dell’ingegneria urbana di inizio Novecento. Collega la Baixa al Chiado, due quartieri centrali separati da un dislivello. Dalla cima si ammira una delle viste più belle di Lisbona, con la piazza Rossio e il fiume Tago. Originariamente funzionava a vapore, mentre oggi è elettrico. È non solo un mezzo di trasporto, ma anche un’icona turistica e architettonica della città."
+            ),
             # Chiado
             Position(38.7105162, -9.1419973,
 				"Tra librerie antiche e caffè profumati, un poeta di bronzo siede paziente. Avvicinati, magari ti sussurrerà un verso di fado o una storia di viaggiatori perduti.",
@@ -242,6 +252,12 @@ hunts_list = [
 				"In una facciata sobria si nasconde un segreto d’oro: altari che brillano come scrigni e storie di santi venuti da lontano. La vera ricchezza è celata all’interno.",
 				"La chiesa di São Roque è una delle più antiche gesuite del mondo. All’interno custodisce cappelle riccamente decorate, tra cui la Cappella di San Giovanni Battista, un tempo considerata la più costosa del mondo."
 			),
+            # Miradouro de São Pedro de Alcântara
+            Position(
+                38.71497146310214, -9.144113597275993,
+                "Da una terrazza giardino, Lisbona si apre davanti a te con castelli e tetti che brillano al sole.",
+                "Il Miradouro de São Pedro de Alcântara è uno dei punti panoramici più famosi della città. Situato nel quartiere Bairro Alto, offre una vista spettacolare sul Castello di São Jorge e sul centro storico. La terrazza è ornata da statue e azulejos che raffigurano le principali attrazioni di Lisbona. È un luogo perfetto al tramonto, quando i colori caldi tingono i tetti e il Tago. Fu costruito nel XIX secolo come giardino pubblico, ed è ancora oggi uno spazio di relax per abitanti e visitatori. Qui si respira l’essenza romantica della città."
+            ),
             # Praça do Rossio
             Position(38.7138741, -9.1390472,
 				"Qui il selciato disegna onde sotto i tuoi piedi, come se il mare fosse intrappolato nella pietra. Trova il re che veglia sulla piazza e ascolta l’eco delle rivolte e dei festeggiamenti.",
@@ -256,54 +272,63 @@ hunts_list = [
     ),
     Hunt(
         5,
-        "Malaga",
-        "Caccia al tesoro a Malaga, tra arte, storia e mare.",
+        "Málaga",
+        "Caccia al tesoro a Málaga, tra castelli moreschi, arte e mercati vivaci.",
         [
             # Castillo de Gibralfaro
-            Position(36.7234153, -4.4114134,
-				"In alto, la rocca veglia sulla città. Da qui le torce segnalavano i pericoli, e oggi le mura raccontano secoli di battaglie.",
-				"Il castello risale al XIV secolo e serviva a proteggere l’Alcazaba sottostante. Dalla sua muraglia si gode la vista panoramica più spettacolare di Málaga."
-			),
+            Position(
+                36.7234153, -4.4114134,
+                "Dall’alto di una collina veglia una fortezza antica, con mura che hanno visto secoli di battaglie e tramonti sul mare.",
+                "Il Castillo de Gibralfaro fu costruito nel XIV secolo per difendere l’Alcazaba e la città sottostante. La sua posizione elevata offriva un punto di osservazione privilegiato sulla costa mediterranea. È celebre per l’assedio del 1487, quando i Re Cattolici conquistarono Málaga dopo mesi di resistenza. Oggi le sue mura ben conservate permettono di camminare lungo il perimetro con viste spettacolari. All’interno ospita un piccolo museo militare che racconta la storia della fortezza. È uno dei simboli storici più imponenti della città."
+            ),
             # Alcazaba
-            Position(36.7214830, -4.4159353,
-				"Scendi tra mura e giardini profumati di aranci, entrerai in una fortezza che un tempo difendeva la città. Ogni cortile è un labirinto, ogni porta un enigma moresco.",
-				"L’Alcazaba fu costruita nell’XI secolo durante la dominazione musulmana. È una delle fortezze arabe meglio conservate di Spagna e offre splendide viste sulla città e sul porto."
-			),
+            Position(
+                36.7214830, -4.4159353,
+                "Scendi tra mura e giardini profumati di aranci, entrerai in una fortezza che un tempo difendeva la città. Ogni cortile è un labirinto, ogni porta un enigma moresco.",
+				"L’Alcazaba di Málaga è una delle fortezze musulmane meglio conservate in Spagna, costruita nell’XI secolo dalla dinastia hammudita. Era residenza dei governatori musulmani e al contempo struttura difensiva. I suoi giardini, cortili e decorazioni moresche rivelano l’influenza artistica dell’epoca. Collegata al castello di Gibralfaro da un passaggio fortificato, formava un sistema di difesa unico. Fu abbandonata per secoli e solo nel XX secolo iniziò il restauro. Oggi rappresenta una delle attrazioni più visitate della città."
+            ),
             # Teatro Romano
-            Position(36.7212080, -4.4172349,
-				"Sotto la collina, pietre antiche raccontano voci di imperatori e gladiatori. Trova i gradini che hanno visto secoli di spettacoli e immagina il pubblico che applaudiva.",
-				"Scoperto solo nel 1951, il Teatro Romano risale al I secolo d.C. e fu usato fino al III secolo. È uno dei simboli archeologici della città."
-			),
+            Position(
+                36.7212080, -4.4172349,
+                "Accanto all’Alcazaba si celano gradinate antiche, testimoni di spettacoli e voci di un impero lontano.",
+                "Il Teatro Romano di Málaga risale al I secolo d.C., costruito durante l’impero di Augusto. Rimase in uso fino al III secolo, per poi cadere nell’oblio. Nei secoli successivi molte sue pietre furono riutilizzate per l’Alcazaba. Fu riscoperto solo nel 1951, nascosto sotto edifici moderni. Oggi, dopo lunghi restauri, ospita eventi culturali e spettacoli. È un prezioso esempio della presenza romana in Andalusia e si integra armoniosamente con i monumenti moreschi circostanti."
+            ),
             # Plaza de la Merced
-            Position(36.7233770, -4.4175685,
-				"In questa piazza vivace, tra caffè e bambini che giocano, troverai la casa di un artista e un obelisco che veglia al centro. Fermati ad ascoltare il ritmo della città.",
-				"Plaza de la Merced è uno dei luoghi più animati di Málaga ed è qui che nacque Picasso. Nei dintorni si trovano locali storici dove gustare i churros con cioccolata calda, perfetto per una pausa golosa."
-			),
+            Position(
+                36.7233770, -4.4175685,
+                "In una piazza vivace si erge un obelisco che veglia al centro dedicato alla libertà e la memoria di un grande artista.",
+                "La Plaza de la Merced è una delle piazze più emblematiche di Málaga, punto d’incontro e cuore sociale della città. Al centro si trova l’obelisco in onore del generale Torrijos, eroe liberale del XIX secolo. Qui nacque Pablo Picasso, e la sua casa-museo si affaccia proprio sulla piazza. È un luogo vivace, animato da bar e caffè che ne fanno uno dei punti di ritrovo preferiti dagli abitanti. Durante le feste cittadine si trasforma in un palcoscenico di musica e tradizione. È una tappa che unisce storia, arte e vita quotidiana."
+            ),
             # Museo Pablo Picasso
-            Position(36.7217488, -4.4184291,
-				"In una città che ha dato i natali a un genio, le tele parlano di occhi cubisti e colori che si trasformano. Trova il palazzo che custodisce i sogni del gran pittore.",
-				"Pablo Picasso nacque a Málaga nel 1881. Il museo a lui dedicato raccoglie oltre 200 opere donate dalla famiglia e si trova a pochi passi dalla sua casa natale."
-			),
+            Position(
+                36.7217488, -4.4184291,
+                "In una città che ha dato i natali a un genio, le tele parlano di occhi cubisti e colori che si trasformano. Trova il palazzo che custodisce i sogni del gran pittore.",
+				"Il Museo Picasso di Málaga, inaugurato nel 2003, ospita oltre 200 opere del celebre artista nato qui nel 1881. Dipinti, sculture, ceramiche e disegni raccontano la sua carriera e la sua straordinaria capacità innovativa. L’edificio è un palazzo rinascimentale ristrutturato, che unisce storia e modernità. È una delle istituzioni culturali più visitate della città. Il museo ha contribuito a rilanciare Málaga come capitale dell’arte contemporanea. Visitandolo si comprende meglio l’evoluzione di Picasso e il suo legame con la città natale."
+            ),
             # Cattedrale di Málaga (“La Manquita”)
-            Position(36.7200911, -4.4200044,
-				"Guarda in alto: una torre svetta fiera, l’altra… manca. Il popolo le ha dato un soprannome affettuoso: cerca la chiesa incompleta e ascolta il silenzio delle sue navate.",
-				"La cattedrale è conosciuta come La Manquita (“la monchetta”) perché le mancò il denaro per costruire la seconda torre. È un mix di stili rinascimentali e barocchi."
-			),
+            Position(
+                36.7200911, -4.4200044,
+                "Guarda in alto: una torre svetta fiera, l’altra… manca. Il popolo le ha dato un soprannome affettuoso: cerca la chiesa incompleta e ascolta il silenzio delle sue navate.",
+				"La Cattedrale di Málaga, soprannominata “La Manquita” (la monca), deve il suo nome alla torre sud mai completata. Costruita tra il XVI e il XVIII secolo, fonde elementi gotici, rinascimentali e barocchi. La sua facciata riccamente decorata e l’interno luminoso ne fanno un capolavoro architettonico. Al suo interno si trovano magnifici cori lignei e opere d’arte rinascimentali. È uno dei simboli religiosi più importanti della città. Nonostante l’incompletezza, la sua imponenza la rende unica e affascinante."
+            ),
             # Calle Larios
-            Position(36.7184674, -4.4214777,
-				"Cammina tra vetrine e profumi, su un tappeto di marmo lucido che brilla al tramonto. Questa via elegante è il cuore pulsante dello shopping… ma attento: potresti perderti tra le sue luci.",
-				"Calle Larios fu inaugurata nel 1891 e prende il nome da una famiglia di commercianti e industriali che finanziò la sua costruzione. Oggi è la via più elegante della città."
-			),
+            Position(
+                36.7184674, -4.4214777,
+                "Cammina tra vetrine e profumi, su un tappeto di marmo lucido che brilla al tramonto. Questa via elegante è il cuore pulsante dello shopping… ma attento: potresti perderti tra le sue luci.",
+				"Calle Marqués de Larios è la via più famosa di Málaga, inaugurata nel 1891. È nota per le sue eleganti architetture ottocentesche e per essere il cuore dello shopping cittadino. Durante tutto l’anno ospita eventi culturali, sfilate e celebrazioni. A Natale si illumina con spettacolari giochi di luci che attraggono visitatori da tutta la Spagna. È pedonale, rendendola perfetta per passeggiare tra negozi e caffè. Rappresenta il volto moderno e cosmopolita di Málaga, in dialogo con la sua storia."
+            ),
             # Plaza de la Constitución
-            Position(36.7211223, -4.4219976,
-				"Al cuore della città, dove da secoli si decide il destino di Málaga, una fontana sorride al sole. Da qui partono tutte le strade: trovala e ti avvicinerai al tesoro finale.",
-				"È la piazza principale dal XV secolo e centro degli eventi cittadini. Ancora oggi ospita feste popolari e il famoso albero di Natale luminoso durante le festività."
-			),
+            Position(
+                36.7211223, -4.4219976,
+                "Al cuore della città, dove da secoli si decide il destino di Málaga, una fontana sorride al sole. Da qui partono tutte le strade: trovala e ti avvicinerai al tesoro finale.",
+				"La Plaza de la Constitución è da secoli il centro politico e sociale di Málaga. In epoca medievale ospitava il municipio e il mercato cittadino. Oggi è circondata da edifici storici e da caffè che la rendono sempre viva. Durante la Settimana Santa è uno dei luoghi principali delle processioni. È anche il punto di partenza della celebre Feria de Málaga, la festa estiva più importante della città. La sua centralità ne fa un crocevia culturale e identitario per gli abitanti."
+            ),
             # Mercado Central de Atarazanas – Tesoro finale
-            Position(36.7182360, -4.4239058,
-				"Segui i profumi del mare e delle spezie: una grande vetrata colorata ti guida verso un mondo di colori e sapori. Qui troverai il tesoro più gustoso della città.",
-				"Il mercato centrale sorge dove in epoca araba c’era un cantiere navale (atarazanas significa “arsenale”). Oggi è il regno delle specialità locali: pesce fresco, olive, spezie e dolci andalusi. Perfetto per concludere la caccia con un assaggio di Málaga autentica."
-			),
+            Position(
+                36.7182360, -4.4239058,
+                "Segui i profumi del mare e delle spezie: una grande vetrata colorata ti guida verso un mondo di colori e sapori. Qui troverai il tesoro più gustoso della città.",
+				"Il Mercado Central de Atarazanas si trova in un edificio del XIX secolo costruito sul sito di un antico arsenale arabo. La sua facciata conserva ancora l’arco originale moresco, testimonianza del passato musulmano di Málaga. All’interno ospita decine di bancarelle con prodotti freschi: pesce, frutta, spezie e tapas. È un luogo animato, frequentato da abitanti e turisti. La vetrata colorata raffigurante scene della città è uno dei suoi tratti distintivi. Visitandolo si vive la Málaga più autentica e conviviale."
+            ),
         ]
     ),
     Hunt(
@@ -315,19 +340,19 @@ hunts_list = [
             Position(
                 38.343224815602774, -0.4831886528356794,
                 "Un tappeto di onde di marmo bianco, rosso e nero ti accompagna tra palme che ondeggiano al vento. Segui il viale fino a scoprire il mare.",
-                "Il viale fu costruito a fine ’800 con oltre 6 milioni di tessere di marmo che disegnano un effetto ondulato. È il luogo ideale per passeggiare e godersi spettacoli di artisti di strada."
+                "L’Explanada de España è una passeggiata iconica di Alicante, lunga oltre 500 metri e decorata con più di sei milioni di tessere di marmo. Il disegno ondulato ricorda le onde del mare e la rende unica nel suo genere. Fiancheggiata da palme, è il luogo ideale per passeggiare al tramonto. Qui si svolgono concerti, mercatini e incontri quotidiani. È un punto di ritrovo per abitanti e turisti. La sua eleganza mediterranea incarna lo spirito marittimo della città."
             ),
             # Ayuntamiento de Alicante
             Position(
                 38.34514337283181, -0.4812205534657148,
                 "Davanti a te si erge un palazzo solenne, con due torri che vegliano sulla città. Ma il vero segreto è all’ingresso: cerca il punto zero da cui nasce l’altitudine spagnola.",
-                "Il Municipio barocco del XVIII secolo ospita al suo interno l’originale “cota cero”, il punto di riferimento da cui si misura l’altitudine di tutta la Spagna."
+                "L’Ayuntamiento de Alicante è il municipio cittadino, costruito nel XVII secolo in stile barocco. La sua facciata è arricchita da torri gemelle e decorazioni elaborate. All’interno si trova la famosa “cota cero”, il punto zero da cui si misurano le altitudini in Spagna. È un edificio che unisce bellezza architettonica e funzione pubblica. Nel corso dei secoli ha ospitato eventi solenni e politici importanti. È uno dei simboli del potere civile e della storia amministrativa di Alicante."
             ),
             # Basilica de Santa María
             Position(
                 38.34605783193618, -0.47952710934089887,
                 "Una chiesa sorta dalle ceneri di una moschea, con torri che sembrano guardiani di pietra. Osserva la sua porta barocca e lascia che ti racconti secoli di fede.",
-                "È la chiesa più antica di Alicante, costruita nel XIV secolo in stile gotico su una precedente moschea. La facciata barocca del XVIII secolo la rende uno dei simboli religiosi cittadini."
+                "La Basilica de Santa María è la chiesa più antica di Alicante, costruita sui resti di una moschea araba nel XIV secolo. In stile gotico-valenzano, conserva elementi barocchi aggiunti nei secoli. La sua facciata è dominata da due torri asimmetriche che la rendono particolare. All’interno custodisce opere d’arte e un imponente altare maggiore rococò. È un luogo simbolico che racconta la trasformazione religiosa e culturale della città. Ancora oggi ospita importanti celebrazioni liturgiche."
             ),
             # Museo de Arte Contemporáneo (MACA)
             Position(
@@ -339,98 +364,110 @@ hunts_list = [
             Position(
                 38.347796346146424, -0.4826606997265488,
                 "Case bianche, fiori colorati e scale strette: questo quartiere è un labirinto che profuma di mare e tradizione. Perditi tra i suoi vicoli e sentirai il cuore antico di Alicante.",
-                "Il quartiere di Santa Cruz è il più pittoresco della città, con balconi fioriti e stradine ripide. Durante la Semana Santa, da qui partono suggestive processioni."
+                "Il Barrio de Santa Cruz è il cuore storico di Alicante, un quartiere pittoresco che conserva l’anima autentica della città. Le sue case bianche con balconi fioriti e piastrelle colorate ricordano i villaggi andalusi. Le stradine in salita offrono scorci spettacolari verso il castello e il mare. È il luogo dove tradizione e quotidianità si fondono: feste popolari, musica e processioni animano le sue vie. Qui si respira l’essenza mediterranea, fatta di convivialità e colori. Passeggiarvi è come fare un salto indietro nel tempo."
             ),
             # Castillo de Santa Bárbara
             Position(
                 38.34868168606967, -0.47697036121888875,
                 "Dall’alto di una montagna che sembra un volto addormentato, una fortezza sorveglia il mare e la città. Scala le sue mura e scoprirai panorami che parlano di battaglie antiche.",
-                "Il castello, costruito in epoca islamica e ampliato nei secoli, domina Alicante dal Monte Benacantil. Deve il suo nome a Santa Barbara perché fu conquistato dai cristiani il 4 dicembre 1248, giorno della santa."
+                "Il Castillo de Santa Bárbara domina Alicante dal Monte Benacantil, a 166 metri di altezza. Fu costruito dai Mori nel IX secolo e ampliato nei secoli successivi. La sua posizione strategica permetteva di controllare tutta la baia e difendere la città dalle invasioni. Durante la dominazione cristiana divenne una delle fortezze più importanti del Mediterraneo. Oggi offre panorami spettacolari sulla costa e ospita mostre ed eventi culturali. È un simbolo di Alicante e uno dei luoghi più visitati della città."
             ),
-            # Plaça de Bous d’Alacant
+            # Placa de Bous d’Alacant
             Position(
                 38.352224317798246, -0.4847408188825469,
                 "Cerca il cerchio perfetto di pietra: un’arena dove un tempo il ruggito del pubblico accompagnava corride e spettacoli. Oggi è un luogo di cultura e memoria.",
-                "Inaugurata nel 1848, la Plaza de Toros di Alicante è una delle più antiche della Comunità Valenciana. Oggi ospita concerti, eventi e mostre oltre alle tradizionali feste."
+                "La Plaza de Bous d’Alacant, inaugurata nel 1848, è una delle arene più grandi della Comunità Valenciana. Ha ospitato corride, concerti ed eventi di massa. La sua architettura circolare può accogliere migliaia di spettatori, rendendola un punto di riferimento per la città. Nei secoli ha visto cambiare le mode e le tradizioni popolari. Oggi continua a essere un luogo vivo di manifestazioni culturali. La sua imponenza testimonia la lunga tradizione della tauromachia e dello spettacolo in Spagna."
             ),
             # Castell de Sant Ferran
             Position(
                 38.35096913106977, -0.49109106139458775,
                 "Non tutti guardano questa fortezza, ma le sue mura hanno difeso la città in tempi difficili. Cerca il castello dimenticato che sorveglia Alicante dall’interno.",
-                "Il Castell de Sant Ferran fu costruito all’inizio del XIX secolo durante la Guerra d’Indipendenza spagnola. Oggi è in parte in rovina, ma circondato da un parco suggestivo."
+                "Il Castell de Sant Ferran fu costruito nel XIX secolo come rinforzo difensivo durante la Guerra d’Indipendenza spagnola. A differenza del Castillo de Santa Bárbara, non ebbe mai un ruolo militare rilevante. La sua struttura, oggi parzialmente in rovina, è circondata da un grande parco urbano. È un luogo perfetto per passeggiate tranquille e per ammirare Alicante da una prospettiva diversa. Poco conosciuto dai turisti, rappresenta un angolo silenzioso e suggestivo della città. È un monumento che ricorda i cambiamenti storici di Alicante."
             ),
             # Mercado Central de Alicante – Tesoro finale
             Position(
                 38.34854993921596, -0.4863498678162601,
                 "Entra dove i colori esplodono e i profumi si mescolano: frutta, spezie, pesce e dolci ti guidano verso il tesoro più goloso. Qui, tra le bancarelle, ti aspetta la ricompensa.",
-                "Costruito nel 1921 in stile modernista, il mercato centrale è il cuore gastronomico della città. Qui puoi assaggiare prodotti tipici come il turrón di Jijona o rinfrescarti con una fresca horchata: il premio perfetto per chi completa la caccia!"
-            )
+                "Il Mercado Central de Alicante, inaugurato nel 1921, è un edificio in stile modernista ricco di vetrate e decorazioni. All’interno ospita oltre 200 bancarelle di prodotti freschi: pesce, carne, frutta e specialità locali. È un luogo vibrante, cuore pulsante della vita quotidiana cittadina. Sopravvissuto a bombardamenti durante la Guerra Civile, conserva una memoria storica importante. Oggi è amato tanto dagli abitanti quanto dai turisti. È la conclusione ideale di una caccia al tesoro tra sapori e tradizioni."
+            ),
         ]
     ),
     Hunt(
         7,
         "Siviglia",
-        "Caccia al tesoro a Siviglia, tra palazzi moreschi, piazze storiche e mercati pieni di vita.",
+        "Caccia al tesoro a Siviglia, tra palazzi moreschi, piazze vivaci e tradizioni andaluse.",
         [
             # Torre del Oro
-            Position(37.3824815054664, -5.996172410691331,
+            Position(
+                37.3824815054664, -5.996172410691331,
                 "Vicino al fiume s’innalza una torre che un tempo brillava come l’oro. Custodiva segreti e ricchezze: riuscirai a svelarli guardando le sue mura?",
-                "Costruita nel XIII secolo dai Mori, la Torre del Oro difendeva l’accesso fluviale. Si racconta che fosse ricoperta da piastrelle dorate che riflettevano il sole sul Guadalquivir."
+                "La Torre del Oro fu costruita nel XIII secolo dai Mori come parte delle mura difensive lungo il Guadalquivir. Il suo nome deriva dai riflessi dorati delle piastrelle che la rivestivano. Per secoli controllò l’accesso al porto, cuore dei commerci con le Americhe. Usata come prigione e deposito di polvere da sparo, ha attraversato guerre e restauri. Oggi ospita un museo navale e dalla sua cima si gode una vista unica sulla città."
             ),
             # Parque de María Luisa
-            Position(37.3735784872386, -5.987907389415148,
+            Position(
+                37.3735784872386, -5.987907389415148,
                 "Entra nel giardino dei sogni: tra alberi secolari, fontane e padiglioni esotici. Segui il canto degli uccelli e troverai la strada.",
-                "Donato alla città nel 1893, il parco è un’oasi romantica di Siviglia. È celebre per i suoi viali ombreggiati, le statue dedicate a scrittori e i padiglioni dell’Esposizione del 1929."
+                "Il Parque de María Luisa è il polmone verde di Siviglia, donato alla città nel 1893 dalla duchessa di Montpensier. Progettato in stile romantico, è ricco di viali ombreggiati, laghetti e padiglioni scenografici. Durante l’Esposizione Iberoamericana del 1929 ospitò padiglioni oggi trasformati in musei. Qui convivono flora mediterranea ed esotica, con pappagalli che si mescolano agli aranci. È uno dei luoghi più amati dai sivigliani per passeggiare e trovare sollievo dalla calura estiva."
             ),
             # Museo de Artes y Costumbres Populares de Sevilla
-            Position(37.37190099734513, -5.987678707790162,
+            Position(
+                37.37190099734513, -5.987678707790162,
                 "In un elegante padiglione scoprirai la vita quotidiana di un tempo: abiti, ceramiche e tradizioni che raccontano l’anima andalusa.",
-                "Ospitato nel padiglione mudéjar dell’Esposizione Iberoamericana, il museo custodisce collezioni legate all’artigianato, al folklore e alle usanze popolari dell’Andalusia."
+                "Ospitato nel padiglione mudejar dell’Esposizione del 1929, il Museo delle Arti e Tradizioni Popolari custodisce testimonianze uniche della vita andalusa. Collezioni di ceramiche di Triana, strumenti musicali, tessuti e artigianato mostrano la ricchezza della cultura popolare. L’edificio stesso è un gioiello architettonico che fonde elementi arabi e rinascimentali. È un viaggio nel quotidiano, dalle feste ai mestieri. Qui si respira l’anima autentica di Siviglia, lontana dai grandi monumenti."
             ),
             # Plaza de España
-            Position(37.377391994584464, -5.986142563659162,
+            Position(
+                37.377391994584464, -5.986142563659162,
                 "Un abbraccio di mattoni e maioliche, ponti e canali ti circondano. Solo chi percorre l’intero semicerchio troverà la via.",
-                "Simbolo dell’Esposizione Iberoamericana del 1929, la piazza rappresenta l’unione tra Spagna e le sue ex colonie. Ogni provincia ha un proprio pannello in ceramica."
+                "La Plaza de España fu costruita per l’Esposizione Iberoamericana del 1929 ed è considerata uno dei luoghi più spettacolari di Siviglia. Progettata dall’architetto Aníbal González, fonde stili rinascimentali, barocchi e moreschi. Ogni provincia spagnola è rappresentata da splendidi azulejos decorativi lungo il colonnato. Il canale interno permette giri in barca, aggiungendo fascino al luogo. La piazza è apparsa in diversi film, tra cui Star Wars e Lawrence d’Arabia. È un simbolo della grandezza spagnola del Novecento."
             ),
             # Archivo de Indias
-            Position(37.384520696278564, -5.9935123809832636,
-                "Qui non troverai tesori d’oro, ma pergamene che raccontano il destino di un impero. Scova il palazzo che custodisce mappe e segreti delle Americhe.",
-                "L’Archivo de Indias contiene milioni di documenti sul periodo coloniale. Fu voluto da Carlo III per concentrare in un unico luogo la storia delle esplorazioni spagnole."
+            Position(
+                37.384520696278564, -5.9935123809832636,
+                "Custode silenzioso di rotte e segreti, qui sono conservate le memorie del Nuovo Mondo.",
+                "L’Archivo General de Indias conserva milioni di documenti sulla storia della colonizzazione spagnola nelle Americhe e nelle Filippine. Fondato nel XVI secolo per centralizzare le carte dell’impero, oggi è patrimonio UNESCO. Qui si trovano lettere di Colombo, mappe, registri e resoconti dei conquistadores. L’edificio, in stile rinascimentale, fu progettato da Juan de Herrera. Visitandolo si tocca con mano l’epoca delle grandi esplorazioni. È una miniera di tesori per storici e viaggiatori curiosi."
             ),
             # Real Alcázar
-            Position(37.38511776267362, -5.991877239494301,
-                "Varca la porta reale e perditi tra mosaici e giardini infiniti. Solo chi ascolta il silenzio dell’acqua troverà l’uscita.",
-                "Il Real Alcázar è un capolavoro mudéjar, ancora oggi residenza ufficiale dei reali di Spagna a Siviglia. La sua bellezza l’ha reso set di celebri film e serie."
+            Position(
+                37.38511776267362, -5.991877239494301,
+                "Un palazzo dalle mille vite, dove re cristiani e sovrani moreschi lasciarono tracce d’eternità.",
+                "Il Real Alcázar di Siviglia è uno dei complessi monumentali più importanti di Spagna, riconosciuto come patrimonio UNESCO. Originariamente costruito come fortezza araba, fu trasformato in palazzo reale dai sovrani cristiani. Lo stile mudejar domina, con decorazioni geometriche, stucchi finissimi e giardini profumati di aranci. È ancora oggi residenza ufficiale della famiglia reale spagnola a Siviglia. Alcune scene di Game of Thrones sono state girate nei suoi cortili. Ogni angolo racconta secoli di storia e cultura."
             ),
             # Cattedrale di Siviglia e Giralda
-            Position(37.38514662926833, -5.992989501696389,
-                "Una torre che fu minareto ora sfida il cielo. Scala la sua rampa e osserva dall’alto la città che non dorme mai.",
-                "La Cattedrale è la più grande costruzione gotica del mondo. La Giralda, antico minareto almohade, è alta più di 100 metri e veniva salita a cavallo dai muezzin."
+            Position(
+                37.38514662926833, -5.992989501696389,
+                "Una torre che fu minareto ora sfida il cielo. Qui fede e storia si intrecciano nei secoli.",
+                "La Cattedrale di Siviglia è una delle più grandi chiese gotiche al mondo, costruita nel XV secolo sul sito della moschea maggiore. All’interno si trova la tomba di Cristoforo Colombo e un imponente altare maggiore. La Giralda, torre campanaria, era in origine un minareto almohade del XII secolo. Il suo profilo domina la città ed è accessibile tramite rampe, pensate per salire a cavallo. Dal suo punto più alto si gode una vista mozzafiato. È un simbolo della potenza religiosa e culturale di Siviglia."
             ),
             # Barrio de Santa Cruz
-            Position(37.386238870365936, -5.990045489094412,
+            Position(
+                37.386238870365936, -5.990045489094412,
                 "Addentrati in vicoli stretti dove il tempo sembra fermarsi. Tra aranci in fiore e balconi colorati, ascolta i sussurri delle antiche leggende.",
-                "Un tempo quartiere ebraico, il Barrio de Santa Cruz è oggi il cuore pittoresco di Siviglia. È famoso per i suoi vicoli labirintici e i patios fioriti."
+                "Il Barrio de Santa Cruz è il quartiere più pittoresco di Siviglia, un labirinto di viuzze eredità del passato ebraico della città. Case imbiancate a calce, piazzette con aranci e balconi fioriti creano un’atmosfera romantica. Qui nacquero leggende e racconti popolari che ancora affascinano i visitatori. Fu il quartiere ebraico fino alla cacciata del 1492. Passeggiando si scoprono scorci segreti e silenzi lontani dal caos. È uno dei luoghi più autentici per vivere l’anima andalusa."
             ),
             # Metropol Parasol (Las Setas)
-            Position(37.39283724091993, -5.991940012228259,
-                "Sotto un bosco di legno troverai ombra e mistero. Sali sul suo dorso ondulato e la città si svelerà ai tuoi occhi.",
-                "Inaugurato nel 2011, il Metropol Parasol è la più grande struttura in legno del mondo. Conosciuto come Las Setas, ospita anche un mercato e un museo archeologico."
+            Position(
+                37.39283724091993, -5.991940012228259,
+                "Un enorme fungo di legno che sembra venire dal futuro: saprai trovarti sotto le sue ombre?",
+                "Il Metropol Parasol, soprannominato “Las Setas” (i funghi), è una struttura contemporanea inaugurata nel 2011. Realizzata in legno e cemento, è una delle più grandi costruzioni lignee del mondo. La sua forma futuristica ha ridisegnato Plaza de la Encarnación, creando un contrasto con l’antico centro storico. Ospita un mercato al piano terra, un museo archeologico nel sottosuolo e una passerella panoramica sul tetto. È un esempio di come Siviglia unisca tradizione e modernità. Di sera si illumina regalando scenografie spettacolari."
             ),
             # Monumento a San Fernando
-            Position(37.38860646350063, -5.995488071655011,
+            Position(
+                37.38860646350063, -5.995488071655011,
                 "Al centro di una piazza variopinta si erge il cavaliere che conquistò Siviglia. Solo chi riconoscerà il re-santo troverà la prossima traccia.",
-                "Il monumento è dedicato a Ferdinando III di Castiglia, che riconquistò Siviglia nel 1248. È una delle statue simbolo della città."
+                "Il Monumento a San Fernando si trova nella Plaza Nueva e commemora il re che riconquistò Siviglia ai Mori nel 1248. La statua equestre mostra il sovrano con spada e croce, simboli del suo potere religioso e militare. Fu inaugurata nel 1924 ed è circondata da edifici storici e caffè. San Fernando è patrono della città e la sua figura è ancora oggi venerata. La piazza è un punto d’incontro vivace e centrale, cuore della vita cittadina. Qui storia e quotidianità si fondono armoniosamente."
             ),
             # Plaza de Toros de la Maestranza
-            Position(37.38537079635972, -5.998813052731079,
+            Position(
+                37.38537079635972, -5.998813052731079,
                 "Un cerchio bianco e oro ti attende: luogo di passioni, sfide e applausi. Qui il tempo scorre al ritmo della tradizione.",
-                "Costruita nel XVIII secolo, la Maestranza è una delle arene più antiche e importanti di Spagna. Può ospitare fino a 12.000 spettatori."
+                "La Plaza de Toros de la Maestranza è una delle arene più antiche e prestigiose di Spagna. Costruita nel XVIII secolo, è famosa per la sua pianta ellittica e la facciata barocca bianca e gialla. Qui si svolgono ancora oggi corride durante la Feria de Abril. Ospita anche un museo che racconta la storia della tauromachia e dei toreri leggendari. L’arena può accogliere migliaia di spettatori ed è considerata la “cattedrale” della corrida. È un simbolo controverso ma radicato della cultura spagnola."
             ),
             # Mercado de Triana – Tesoro finale
-            Position(37.38553943787021, -6.003180343155216,
+            Position(
+                37.38553943787021, -6.003180343155216,
                 "Oltre il ponte, in un quartiere di marinai e ceramisti, scoprirai il mercato dei colori. Qui ti attende il tesoro più goloso: tapas e sapori autentici.",
-                "Il Mercado de Triana sorge sui resti del Castello di San Jorge, antica sede dell’Inquisizione. Oggi è il luogo perfetto per gustare la vera cucina sivigliana."
+                "Il Mercado de Triana sorge sulle rovine del Castello di San Jorge, antica sede dell’Inquisizione. Oggi è uno dei mercati più vivaci di Siviglia, ricco di bancarelle di pesce fresco, tapas e prodotti locali. Ogni mattina si anima di voci e colori, punto di ritrovo per abitanti e turisti. La struttura moderna si integra con resti storici visibili ancora oggi. Qui si respira la vera anima del quartiere di Triana, culla del flamenco e dell’artigianato ceramico. È la conclusione perfetta di un viaggio tra storia e gusto."
             ),
         ]
     )
